@@ -12,8 +12,8 @@
   <meta property="og:image" content="https://www.unifuturaedu.com/images/obelisco-calle.jpg">
   <meta property="og:url" content="https://www.unifuturaedu.com">
   <link rel="canonical" href="https://www.unifuturaedu.com">
-  <link rel="icon" type="image/svg+xml" href="logo unifutura.svg">
-  <link rel="apple-touch-icon" href="logo unifutura.svg">
+  <link rel="icon" type="image/svg+xml" href="https://www.unifuturaedu.com/logo%20unifutura.svg">
+  <link rel="apple-touch-icon" href="https://www.unifuturaedu.com/logo%20unifutura.svg">
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -62,6 +62,14 @@
       transition: all 0.2s ease;
     }
     .navy-btn:hover { background-color: #0a1f38; }
+    .brand-cta {
+      background-color: #0F2D52;
+      color: #D4A72C;
+      font-family: 'Montserrat', system-ui, sans-serif;
+      font-weight: 700;
+      letter-spacing: 0.01em;
+    }
+    .brand-cta:hover { background-color: #0a1f38; }
     .nav-link { position: relative; transition: color 0.2s ease; }
     .nav-link:after {
       content: '';
@@ -182,6 +190,10 @@
       transform: translateY(-2px) scale(1.04);
       box-shadow: 0 14px 28px rgba(37, 211, 102, 0.55);
     }
+    @media (max-width: 767px) {
+      body { padding-bottom: 5.25rem; }
+      .wa-float { bottom: 6.25rem; }
+    }
     .trust-photo {
       position: relative;
       height: 7.5rem;
@@ -219,7 +231,7 @@
     <div class="max-w-screen-2xl mx-auto">
       <div class="px-6 lg:px-10 h-20 flex items-center justify-between">
         <a href="#" class="flex items-center gap-x-3">
-          <img src="logo unifutura.svg" alt="Unifutura — Estudia, viaja y transforma tu futuro" class="h-[72px] w-auto">
+          <img src="https://www.unifuturaedu.com/logo%20unifutura.svg" alt="Unifutura — Estudia, viaja y transforma tu futuro" class="h-[72px] w-auto">
           <div class="hidden sm:block">
             <div class="logo-text text-[20px] leading-none tracking-[-1.5px] text-[#0F2D52]">UNIFUTURA</div>
             <div class="text-[9px] font-medium text-[#D4A72C] tracking-[1.5px] -mt-0.5">ESTUDIA • VIAJA • TRANSFORMA</div>
@@ -247,8 +259,8 @@
             </span>
             <span>WhatsApp</span>
           </a>
-          <a href="#contacto" class="gold-btn px-6 py-2.5 rounded-full text-sm inline-flex items-center shadow-sm">
-            Agenda una asesoría
+          <a href="#contacto" class="brand-cta px-6 py-2.5 rounded-full text-sm inline-flex items-center">
+            Solicita información
           </a>
         </div>
 
@@ -275,8 +287,8 @@
              class="flex items-center justify-center gap-x-2 w-full py-3.5 rounded-2xl border border-[#0F2D52]/20 text-[#0F2D52] font-semibold">
             Chatear por WhatsApp
           </a>
-          <a href="#contacto" class="gold-btn text-center w-full py-3.5 rounded-2xl text-sm font-semibold">
-            Consulta gratuita
+          <a href="#contacto" class="brand-cta text-center w-full py-3.5 rounded-2xl text-sm">
+            Solicita información
           </a>
         </div>
       </div>
@@ -284,45 +296,35 @@
   </nav>
 
   <!-- HERO -->
-  <header class="hero-shell flex items-center" style="background-color:#0F2D52;">
-    <img class="hero-slide is-active" src="images/estudiantes.jpg" alt="Estudiantes en un campus universitario" width="2000" height="1200" onerror="this.onerror=null;this.src='images/aula.jpg'">
-    <img class="hero-slide" src="images/uba-derecho.jpg" alt="Facultad de Derecho de la UBA" width="2000" height="1200" onerror="this.onerror=null;this.src='images/biblioteca.jpg'">
-    <img class="hero-slide" src="images/biblioteca.jpg" alt="Biblioteca universitaria" width="2000" height="1200" onerror="this.onerror=null;this.src='images/aula.jpg'">
-    <div class="hero-overlay" style="background-color: rgba(15, 45, 82, 0.72);"></div>
-
-    <div class="relative z-10 w-full max-w-screen-2xl mx-auto px-6 lg:px-10 py-16 lg:py-24">
-      <div class="max-w-3xl">
-        <div class="inline-flex items-center gap-x-2 bg-white/10 backdrop-blur-sm border border-white/20 text-white text-xs tracking-[1.5px] font-semibold px-4 py-1.5 rounded-full mb-6">
-          <span class="w-1.5 h-1.5 rounded-full animate-pulse" style="background-color:#D4A72C;"></span>
-          EDUCACIÓN INTERNACIONAL · DESDE ECUADOR
-        </div>
-
-        <h1 class="font-heading text-[40px] sm:text-[52px] lg:text-[60px] leading-[1.05] tracking-[-2px] mb-6 text-white">
+  <header class="bg-white border-b border-[#0F2D52]/10">
+    <div class="max-w-screen-2xl mx-auto px-6 lg:px-10 py-12 lg:py-16 grid lg:grid-cols-12 gap-10 lg:gap-14 items-center">
+      <div class="lg:col-span-6">
+        <p class="text-xs tracking-[0.18em] font-semibold text-[#0F2D52]">EDUCACIÓN INTERNACIONAL · DESDE ECUADOR</p>
+        <div class="mt-4 h-1 w-16 bg-[#D4A72C]" aria-hidden="true"></div>
+        <h1 class="font-heading text-[40px] sm:text-[52px] lg:text-[56px] leading-[1.05] tracking-[-2px] mt-5 text-[#0F2D52]">
           Tu futuro no tiene fronteras.
         </h1>
-
-        <p class="max-w-2xl text-lg lg:text-xl text-white/90 font-light mb-3">
-          Te acompañamos a explorar oportunidades educativas internacionales con orientación personalizada, organización clara y transparencia total.
+        <p class="mt-5 max-w-xl text-lg text-[#0F2D52]/85 leading-relaxed">
+          Orientamos y acompañamos a familias ecuatorianas que quieren estudiar fuera. Hoy el camino que mejor leemos es Argentina: UBA, UNLP y privadas de Buenos Aires.
         </p>
-        <p class="max-w-xl text-white text-[15px] lg:text-[17px] mb-10 font-medium">
-          Confianza para la familia. Claridad para el estudiante.
+        <p class="mt-3 max-w-xl text-[15px] leading-relaxed text-[#0F2D52]/70">
+          La primera conversación no tiene costo y no obliga a contratar. El alcance y el honorario se entregan por escrito después del diagnóstico. La universidad decide la admisión.
         </p>
-
-        <div class="flex flex-col sm:flex-row gap-4">
-          <a href="#destinos" class="gold-btn inline-flex items-center justify-center gap-x-3 px-9 h-14 rounded-2xl text-base shadow-lg">
-            Explora tus oportunidades
-            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M17 8l4 4m0 0l-4 4m4-4H3" /></svg>
+        <div class="mt-8 flex flex-col sm:flex-row gap-3">
+          <a href="#contacto" class="brand-cta inline-flex items-center justify-center gap-x-3 px-8 h-14 rounded-xl text-base">
+            Solicita información
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M17 8l4 4m0 0l-4 4m4-4H3" /></svg>
           </a>
-          <a href="#contacto" class="inline-flex items-center justify-center gap-x-3 px-8 h-14 rounded-2xl border-2 border-white/40 hover:bg-white/10 text-white font-semibold text-base transition-all">
-            Agenda una asesoría gratuita
+          <a href="#por-que-ba" class="inline-flex items-center justify-center px-8 h-14 rounded-xl border border-[#0F2D52]/20 text-[#0F2D52] font-semibold">
+            Ver Argentina
           </a>
         </div>
-
-        <div class="mt-9 flex flex-wrap gap-x-6 gap-y-2 text-xs text-white/65 tracking-widest">
-          <span>CONSULTA 100% GRATUITA</span>
-          <span>RESPUESTA EN &lt; 24 H</span>
-          <span>SIN COMPROMISO</span>
-        </div>
+        <p class="mt-5 text-xs tracking-wide text-[#0F2D52]/55">Respuesta en menos de 24 horas · Quito, Guayaquil y Cuenca</p>
+      </div>
+      <div class="lg:col-span-6">
+        <figure class="overflow-hidden rounded-3xl bg-[#0F2D52] aspect-[4/3]">
+          <img src="https://www.unifuturaedu.com/images/uba-derecho.jpg" alt="Facultad de Derecho de la Universidad de Buenos Aires" class="h-full w-full object-cover" width="1600" height="1200" onerror="this.onerror=null;this.src='https://www.unifuturaedu.com/images/biblioteca.jpg'">
+        </figure>
       </div>
     </div>
   </header>
@@ -350,25 +352,51 @@
       </div>
       <div class="grid grid-cols-2 lg:grid-cols-4 gap-3">
         <div class="trust-photo photo-fallback">
-          <img src="images/obelisco.jpg" alt="Obelisco de Buenos Aires — CABA" class="object-cover w-full h-full" loading="lazy" onerror="this.onerror=null;this.src='images/obelisco-dia.jpg'">
-          <span>CABA</span>
+          <img src="https://www.unifuturaedu.com/images/biblioteca.jpg" alt="Biblioteca universitaria" class="object-cover w-full h-full" loading="lazy" onerror="this.onerror=null;this.src='https://www.unifuturaedu.com/images/aula.jpg'">
+          <span>ESTUDIO</span>
         </div>
         <div class="trust-photo photo-fallback">
-          <img src="images/la-plata-catedral.jpg" alt="Catedral de La Plata" class="object-cover w-full h-full" loading="lazy" onerror="this.onerror=null;this.src='images/unlp.jpg'">
+          <img src="https://www.unifuturaedu.com/images/la-plata-catedral.jpg" alt="Catedral de La Plata" class="object-cover w-full h-full" loading="lazy" onerror="this.onerror=null;this.src='https://www.unifuturaedu.com/images/unlp.jpg'">
           <span>LA PLATA</span>
         </div>
         <div class="trust-photo photo-fallback">
-          <img src="images/uba-derecho.jpg" alt="Facultad de Derecho UBA — Buenos Aires" class="object-cover w-full h-full" loading="lazy" onerror="this.onerror=null;this.src='images/plaza-mayo.jpg'">
+          <img src="https://www.unifuturaedu.com/images/uba-derecho.jpg" alt="Facultad de Derecho UBA — Buenos Aires" class="object-cover w-full h-full" loading="lazy" onerror="this.onerror=null;this.src='https://www.unifuturaedu.com/images/plaza-mayo.jpg'">
           <span>UBA</span>
         </div>
         <div class="trust-photo photo-fallback">
-          <img src="images/unlp.jpg" alt="Universidad Nacional de La Plata" class="object-cover w-full h-full" loading="lazy" onerror="this.onerror=null;this.src='images/la-plata-catedral.jpg'">
+          <img src="https://www.unifuturaedu.com/images/unlp.jpg" alt="Universidad Nacional de La Plata" class="object-cover w-full h-full" loading="lazy" onerror="this.onerror=null;this.src='https://www.unifuturaedu.com/images/la-plata-catedral.jpg'">
           <span>UNLP</span>
         </div>
       </div>
     </div>
   </div>
 
+  <section id="lineas" class="bg-white border-b border-[#0F2D52]/10">
+    <div class="max-w-screen-2xl mx-auto px-6 lg:px-10 py-16">
+      <div class="max-w-2xl">
+        <p class="uppercase tracking-[3px] text-xs font-semibold text-[#D4A72C]">TRES LÍNEAS</p>
+        <h2 class="section-heading text-3xl lg:text-4xl tracking-[-1.2px] mt-2">Lo que está activo, y lo que todavía no.</h2>
+        <p class="mt-4 text-[#0F2D52]/75 text-[15.5px] leading-relaxed">El manual de marca exige que el estado de cada línea se vea. Hoy se contrata la asesoría. Preuniversitario e idiomas no se presentan como servicio abierto.</p>
+      </div>
+      <div class="mt-8 grid lg:grid-cols-3 gap-5">
+        <article class="rounded-3xl border border-[#0F2D52] bg-white p-6 flex flex-col">
+          <h3 class="font-heading text-xl text-[#0F2D52]">Asesoría para estudiar en el extranjero</h3>
+          <p class="mt-3 text-sm leading-relaxed text-[#0F2D52]/75">Orientación y acompañamiento desde Ecuador. Argentina es el destino prioritario. Canadá se revisa solo si el caso lo justifica.</p>
+          <span class="mt-6 inline-flex w-fit rounded-full bg-[#0F2D52] px-3 py-1 text-[11px] font-bold tracking-widest text-white">SERVICIO ACTUAL</span>
+        </article>
+        <article class="rounded-3xl border border-[#4A90E2]/40 bg-white p-6 flex flex-col">
+          <h3 class="font-heading text-xl text-[#4A90E2]">Preuniversitario</h3>
+          <p class="mt-3 text-sm leading-relaxed text-[#0F2D52]/75">Preparación antes de postular. No hay fechas, cupos ni precios publicados en esta página hasta que la línea quede confirmada.</p>
+          <span class="mt-6 inline-flex w-fit rounded-full bg-[#4A90E2] px-3 py-1 text-[11px] font-bold tracking-widest text-white">EN DESARROLLO</span>
+        </article>
+        <article class="rounded-3xl border border-[#D4A72C]/50 bg-white p-6 flex flex-col">
+          <h3 class="font-heading text-xl text-[#0F2D52]">Escuela de idiomas</h3>
+          <p class="mt-3 text-sm leading-relaxed text-[#0F2D52]/75">Línea futura. No se ofrece inscripción ni se promete un idioma, un nivel ni una fecha de inicio.</p>
+          <span class="mt-6 inline-flex w-fit rounded-full bg-[#D4A72C] px-3 py-1 text-[11px] font-bold tracking-widest text-[#0F2D52]">EN PROYECCIÓN</span>
+        </article>
+      </div>
+    </div>
+  </section>
 
   <!-- DESTINOS -->
   <section id="destinos" class="max-w-screen-2xl mx-auto px-6 lg:px-10 py-20">
@@ -380,7 +408,7 @@
     <div class="grid lg:grid-cols-2 gap-6">
       <article class="premium-card rounded-3xl border border-[#0F2D52]/10 overflow-hidden bg-white flex flex-col">
         <div class="relative h-52 photo-fallback">
-          <img src="images/uba-derecho.jpg" alt="Facultad de Derecho de la Universidad de Buenos Aires" class="w-full h-full object-cover" loading="lazy">
+          <img src="https://www.unifuturaedu.com/images/uba-derecho.jpg" alt="Facultad de Derecho de la Universidad de Buenos Aires" class="w-full h-full object-cover" loading="lazy">
           <span class="absolute top-4 left-4 bg-[#D4A72C] text-[#0F2D52] text-[11px] font-bold tracking-widest px-3 py-1 rounded-full">DESTINO PRIORITARIO</span>
         </div>
         <div class="p-7 flex flex-col flex-1">
@@ -391,7 +419,7 @@
       </article>
       <article class="premium-card rounded-3xl border border-[#0F2D52]/10 overflow-hidden bg-white flex flex-col">
         <div class="relative h-52 photo-fallback">
-          <img src="images/estudiantes.jpg" alt="Estudiantes en un entorno universitario" class="w-full h-full object-cover" loading="lazy">
+          <img src="https://www.unifuturaedu.com/images/estudiantes.jpg" alt="Estudiantes en un entorno universitario" class="w-full h-full object-cover" loading="lazy">
           <span class="absolute top-4 left-4 bg-[#0F2D52] text-white text-[11px] font-bold tracking-widest px-3 py-1 rounded-full">SEGUNDA LÍNEA</span>
         </div>
         <div class="p-7 flex flex-col flex-1">
@@ -428,7 +456,7 @@
           “Te decimos si Buenos Aires es o no el mejor camino para tu hijo. Preferimos una familia informada antes que una inscripción apurada.”
         </p>
         <div class="mt-8 rounded-3xl overflow-hidden photo-fallback h-56 sm:h-72">
-          <img src="images/obelisco-dia.jpg" alt="Obelisco de Buenos Aires y avenida urbana en CABA" class="w-full h-full object-cover" loading="lazy" onerror="this.onerror=null;this.src='images/puerto-madero.jpg'">
+          <img src="https://www.unifuturaedu.com/images/obelisco-dia.jpg" alt="Obelisco de Buenos Aires y avenida urbana en CABA" class="w-full h-full object-cover" loading="lazy" onerror="this.onerror=null;this.src='https://www.unifuturaedu.com/images/puerto-madero.jpg'">
         </div>
       </div>
 
@@ -459,7 +487,7 @@
             <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.25" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/></svg>
           </div>
           <div class="font-semibold text-xl tracking-tight mb-2">Acompañamiento real</div>
-          <p class="text-[#0F2D52]/75 text-[14.5px] leading-relaxed">No terminamos en el aeropuerto. Orientamos vivienda, primer mes, red de apoyo y seguimiento emocional cuando el plan lo incluye.</p>
+          <p class="text-[#0F2D52]/75 text-[14.5px] leading-relaxed">No terminamos en el aeropuerto. Orientamos vivienda, primer mes, red de pares y seguimiento emocional cuando el plan lo incluye.</p>
         </div>
       </div>
     </div>
@@ -473,35 +501,35 @@
     </div>
     <div class="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4">
       <div class="gallery-item h-40 md:h-52" data-lightbox>
-        <img src="images/uba-derecho.jpg" alt="Facultad de Derecho UBA en Buenos Aires" class="object-cover w-full h-full" loading="lazy" onerror="this.onerror=null;this.src='images/plaza-mayo.jpg'">
+        <img src="https://www.unifuturaedu.com/images/uba-derecho.jpg" alt="Facultad de Derecho UBA en Buenos Aires" class="object-cover w-full h-full" loading="lazy" onerror="this.onerror=null;this.src='https://www.unifuturaedu.com/images/plaza-mayo.jpg'">
         <div class="gallery-caption">Facultad</div>
       </div>
       <div class="gallery-item h-40 md:h-52" data-lightbox>
-        <img src="images/obelisco.jpg" alt="Obelisco de Buenos Aires" class="object-cover w-full h-full" loading="lazy" onerror="this.onerror=null;this.src='images/obelisco-dia.jpg'">
+        <img src="https://www.unifuturaedu.com/images/obelisco.jpg" alt="Obelisco de Buenos Aires" class="object-cover w-full h-full" loading="lazy" onerror="this.onerror=null;this.src='https://www.unifuturaedu.com/images/obelisco-dia.jpg'">
         <div class="gallery-caption">Ciudad</div>
       </div>
       <div class="gallery-item h-40 md:h-52" data-lightbox>
-        <img src="images/estudiantes.jpg" alt="Estudiantes en entorno universitario" class="object-cover w-full h-full" loading="lazy" onerror="this.onerror=null;this.src='images/aula.jpg'">
+        <img src="https://www.unifuturaedu.com/images/estudiantes.jpg" alt="Estudiantes en entorno universitario" class="object-cover w-full h-full" loading="lazy" onerror="this.onerror=null;this.src='https://www.unifuturaedu.com/images/aula.jpg'">
         <div class="gallery-caption">Estudiantes</div>
       </div>
       <div class="gallery-item h-40 md:h-52" data-lightbox>
-        <img src="images/la-plata-catedral.jpg" alt="Catedral de La Plata" class="object-cover w-full h-full" loading="lazy" onerror="this.onerror=null;this.src='images/unlp.jpg'">
+        <img src="https://www.unifuturaedu.com/images/la-plata-catedral.jpg" alt="Catedral de La Plata" class="object-cover w-full h-full" loading="lazy" onerror="this.onerror=null;this.src='https://www.unifuturaedu.com/images/unlp.jpg'">
         <div class="gallery-caption">La Plata</div>
       </div>
       <div class="gallery-item h-40 md:h-52" data-lightbox>
-        <img src="images/puerto-madero.jpg" alt="Puerto Madero en la Ciudad de Buenos Aires" class="object-cover w-full h-full" loading="lazy" onerror="this.onerror=null;this.src='images/plaza-mayo.jpg'">
+        <img src="https://www.unifuturaedu.com/images/puerto-madero.jpg" alt="Puerto Madero en la Ciudad de Buenos Aires" class="object-cover w-full h-full" loading="lazy" onerror="this.onerror=null;this.src='https://www.unifuturaedu.com/images/plaza-mayo.jpg'">
         <div class="gallery-caption">CABA</div>
       </div>
       <div class="gallery-item h-40 md:h-52" data-lightbox>
-        <img src="images/cafe.jpg" alt="Café y vida cotidiana porteña" class="object-cover w-full h-full" loading="lazy" onerror="this.onerror=null;this.src='images/obelisco-angulo.jpg'">
+        <img src="https://www.unifuturaedu.com/images/cafe.jpg" alt="Café y vida cotidiana porteña" class="object-cover w-full h-full" loading="lazy" onerror="this.onerror=null;this.src='https://www.unifuturaedu.com/images/obelisco-angulo.jpg'">
         <div class="gallery-caption">Vida cotidiana</div>
       </div>
       <div class="gallery-item h-40 md:h-52" data-lightbox>
-        <img src="images/unlp.jpg" alt="Edificio de la Universidad Nacional de La Plata" class="object-cover w-full h-full" loading="lazy" onerror="this.onerror=null;this.src='images/la-plata-catedral.jpg'">
+        <img src="https://www.unifuturaedu.com/images/unlp.jpg" alt="Edificio de la Universidad Nacional de La Plata" class="object-cover w-full h-full" loading="lazy" onerror="this.onerror=null;this.src='https://www.unifuturaedu.com/images/la-plata-catedral.jpg'">
         <div class="gallery-caption">Campus</div>
       </div>
       <div class="gallery-item h-40 md:h-52" data-lightbox>
-        <img src="images/biblioteca.jpg" alt="Biblioteca y espacio de estudio" class="object-cover w-full h-full" loading="lazy" onerror="this.onerror=null;this.src='images/aula.jpg'">
+        <img src="https://www.unifuturaedu.com/images/biblioteca.jpg" alt="Biblioteca y espacio de estudio" class="object-cover w-full h-full" loading="lazy" onerror="this.onerror=null;this.src='https://www.unifuturaedu.com/images/aula.jpg'">
         <div class="gallery-caption">Estudio</div>
       </div>
     </div>
@@ -524,7 +552,7 @@
         <!-- UBA -->
         <article class="uni-card premium-card bg-white rounded-3xl border-2 border-[#0F2D52]/10 overflow-hidden flex flex-col">
           <div class="uni-card-photo h-52 md:h-56">
-            <img src="images/uba-derecho.jpg" alt="Facultad de Derecho de la Universidad de Buenos Aires (UBA)" class="w-full h-full object-cover" loading="lazy" onerror="this.onerror=null;this.src='images/plaza-mayo.jpg'">
+            <img src="https://www.unifuturaedu.com/images/uba-derecho.jpg" alt="Facultad de Derecho de la Universidad de Buenos Aires (UBA)" class="w-full h-full object-cover" loading="lazy" onerror="this.onerror=null;this.src='https://www.unifuturaedu.com/images/plaza-mayo.jpg'">
           </div>
           <div class="p-8 flex-1 flex flex-col">
             <div class="flex items-start justify-between gap-3 mb-3">
@@ -548,7 +576,7 @@
         <!-- UNLP -->
         <article class="uni-card premium-card bg-white rounded-3xl border-2 border-[#0F2D52]/10 overflow-hidden flex flex-col">
           <div class="uni-card-photo h-52 md:h-56">
-            <img src="images/unlp.jpg" alt="Universidad Nacional de La Plata (UNLP)" class="w-full h-full object-cover" loading="lazy" onerror="this.onerror=null;this.src='images/la-plata-catedral.jpg'">
+            <img src="https://www.unifuturaedu.com/images/unlp.jpg" alt="Universidad Nacional de La Plata (UNLP)" class="w-full h-full object-cover" loading="lazy" onerror="this.onerror=null;this.src='https://www.unifuturaedu.com/images/la-plata-catedral.jpg'">
           </div>
           <div class="p-8 flex-1 flex flex-col">
             <div class="flex items-start justify-between gap-3 mb-3">
@@ -651,7 +679,7 @@
           <p class="mt-3 text-[15px] leading-relaxed text-[#0F2D52]/75 border-l-2 border-[#D4A72C] pl-4">El acompañamiento se organiza desde Ecuador: diagnóstico, documentos y seguimiento de la postulación, según el plan acordado.</p>
         </div>
         <div class="lg:col-span-5 rounded-3xl overflow-hidden photo-fallback h-64">
-          <img src="images/aula.jpg" alt="Aula universitaria, referencia de formación académica" class="w-full h-full object-cover" loading="lazy">
+          <img src="https://www.unifuturaedu.com/images/aula.jpg" alt="Aula universitaria, referencia de formación académica" class="w-full h-full object-cover" loading="lazy">
         </div>
       </div>
 
@@ -729,15 +757,15 @@
 
     <div class="grid sm:grid-cols-3 gap-4 mb-10">
       <figure class="rounded-3xl overflow-hidden photo-fallback">
-        <img src="images/depto.jpg" alt="Habitación o departamento compartido de estudiantes" class="w-full h-44 object-cover" loading="lazy" onerror="this.onerror=null;this.src='images/cafe.jpg'">
+        <img src="https://www.unifuturaedu.com/images/depto.jpg" alt="Habitación o departamento compartido de estudiantes" class="w-full h-44 object-cover" loading="lazy" onerror="this.onerror=null;this.src='https://www.unifuturaedu.com/images/cafe.jpg'">
         <figcaption class="px-4 py-3 text-xs tracking-widest font-semibold text-[#0F2D52]/70 bg-[#F8F6F1]">VIVIENDA · ROOMIE / RESIDENCIA</figcaption>
       </figure>
       <figure class="rounded-3xl overflow-hidden photo-fallback">
-        <img src="images/obelisco-angulo.jpg" alt="Calle y tráfico en el centro de Buenos Aires cerca del Obelisco" class="w-full h-44 object-cover" loading="lazy" onerror="this.onerror=null;this.src='images/obelisco.jpg'">
+        <img src="https://www.unifuturaedu.com/images/obelisco-angulo.jpg" alt="Calle y tráfico en el centro de Buenos Aires cerca del Obelisco" class="w-full h-44 object-cover" loading="lazy" onerror="this.onerror=null;this.src='https://www.unifuturaedu.com/images/obelisco.jpg'">
         <figcaption class="px-4 py-3 text-xs tracking-widest font-semibold text-[#0F2D52]/70 bg-[#F8F6F1]">TRANSPORTE · MOVILIDAD EN CABA</figcaption>
       </figure>
       <figure class="rounded-3xl overflow-hidden photo-fallback">
-        <img src="images/cafe.jpg" alt="Café y vida cotidiana en la ciudad" class="w-full h-44 object-cover" loading="lazy" onerror="this.onerror=null;this.src='images/estudiantes.jpg'">
+        <img src="https://www.unifuturaedu.com/images/cafe.jpg" alt="Café y vida cotidiana en la ciudad" class="w-full h-44 object-cover" loading="lazy" onerror="this.onerror=null;this.src='https://www.unifuturaedu.com/images/estudiantes.jpg'">
         <figcaption class="px-4 py-3 text-xs tracking-widest font-semibold text-[#0F2D52]/70 bg-[#F8F6F1]">COMIDA · VIDA COTIDIANA</figcaption>
       </figure>
     </div>
@@ -816,7 +844,7 @@
           </p>
         </div>
         <div class="lg:col-span-5 rounded-3xl overflow-hidden photo-fallback h-48 lg:h-56">
-          <img src="images/plaza-mayo.jpg" alt="Plaza de Mayo en Buenos Aires" class="w-full h-full object-cover" loading="lazy" onerror="this.onerror=null;this.src='images/obelisco.jpg'">
+          <img src="https://www.unifuturaedu.com/images/plaza-mayo.jpg" alt="Plaza de Mayo en Buenos Aires" class="w-full h-full object-cover" loading="lazy" onerror="this.onerror=null;this.src='https://www.unifuturaedu.com/images/obelisco.jpg'">
         </div>
       </div>
 
@@ -1014,13 +1042,13 @@
 
       <div class="mt-10 grid sm:grid-cols-3 gap-4">
         <div class="rounded-2xl overflow-hidden photo-fallback h-36">
-          <img src="images/aeropuerto.jpg" alt="Llegada y recepción en aeropuerto" class="w-full h-full object-cover opacity-90" loading="lazy" onerror="this.onerror=null;this.src='images/estudiantes.jpg'">
+          <img src="https://www.unifuturaedu.com/images/aeropuerto.jpg" alt="Llegada y recepción en aeropuerto" class="w-full h-full object-cover opacity-90" loading="lazy" onerror="this.onerror=null;this.src='https://www.unifuturaedu.com/images/estudiantes.jpg'">
         </div>
         <div class="rounded-2xl overflow-hidden photo-fallback h-36">
-          <img src="images/asesoria.jpg" alt="Sesión de asesoría con la familia" class="w-full h-full object-cover opacity-90" loading="lazy" onerror="this.onerror=null;this.src='images/estudiantes.jpg'">
+          <img src="https://www.unifuturaedu.com/images/asesoria.jpg" alt="Sesión de asesoría con la familia" class="w-full h-full object-cover opacity-90" loading="lazy" onerror="this.onerror=null;this.src='https://www.unifuturaedu.com/images/estudiantes.jpg'">
         </div>
         <div class="rounded-2xl overflow-hidden photo-fallback h-36">
-          <img src="images/aula.jpg" alt="Estudiante en facultad" class="w-full h-full object-cover opacity-90" loading="lazy" onerror="this.onerror=null;this.src='images/biblioteca.jpg'">
+          <img src="https://www.unifuturaedu.com/images/aula.jpg" alt="Estudiante en facultad" class="w-full h-full object-cover opacity-90" loading="lazy" onerror="this.onerror=null;this.src='https://www.unifuturaedu.com/images/biblioteca.jpg'">
         </div>
       </div>
       <p class="mt-8 text-center text-[11px] tracking-widest text-white/50 uppercase">Recepción · Familia · Facultad</p>
@@ -1092,7 +1120,7 @@
   <!-- CÓMO EMPEZAR -->
   <section id="proceso" class="max-w-screen-2xl mx-auto px-6 lg:px-10 pb-20">
     <div class="rounded-3xl overflow-hidden photo-fallback h-40 md:h-52 mb-10">
-      <img src="images/estudiantes.jpg" alt="Estudiantes iniciando su camino universitario" class="w-full h-full object-cover" loading="lazy" onerror="this.onerror=null;this.src='images/aula.jpg'">
+      <img src="https://www.unifuturaedu.com/images/estudiantes.jpg" alt="Estudiantes iniciando su camino universitario" class="w-full h-full object-cover" loading="lazy" onerror="this.onerror=null;this.src='https://www.unifuturaedu.com/images/aula.jpg'">
     </div>
     <div class="text-center mb-12">
       <div class="uppercase tracking-[3px] text-xs font-semibold text-[#D4A72C]">PASO A PASO</div>
@@ -1140,12 +1168,12 @@
           <p class="mt-4 text-[#0F2D52]/75 text-[15px]">Antes de decidir, una familia necesita saber cómo se comunica, qué se paga, quién decide cada cosa y qué pasa si el plan cambia.</p>
         </div>
         <div class="lg:col-span-5 rounded-3xl overflow-hidden photo-fallback h-52 lg:h-60">
-          <img src="images/asesoria.jpg" alt="Familia y estudiante universitario revisando opciones de estudio en Buenos Aires" class="w-full h-full object-cover" loading="lazy" onerror="this.onerror=null;this.src='images/biblioteca.jpg'">
+          <img src="https://www.unifuturaedu.com/images/asesoria.jpg" alt="Familia y estudiante universitario revisando opciones de estudio en Buenos Aires" class="w-full h-full object-cover" loading="lazy" onerror="this.onerror=null;this.src='https://www.unifuturaedu.com/images/biblioteca.jpg'">
         </div>
       </div>
 
       <div class="rounded-3xl overflow-hidden photo-fallback h-40 md:h-48 mb-10">
-        <img src="images/biblioteca.jpg" alt="Espacio de estudio universitario — biblioteca" class="w-full h-full object-cover" loading="lazy" onerror="this.onerror=null;this.src='images/estudiantes.jpg'">
+        <img src="https://www.unifuturaedu.com/images/biblioteca.jpg" alt="Espacio de estudio universitario — biblioteca" class="w-full h-full object-cover" loading="lazy" onerror="this.onerror=null;this.src='https://www.unifuturaedu.com/images/estudiantes.jpg'">
       </div>
 
 
@@ -1304,7 +1332,7 @@
     <div class="grid lg:grid-cols-12 gap-10 lg:gap-14">
       <div class="lg:col-span-5">
         <div class="rounded-3xl overflow-hidden photo-fallback h-48 mb-8">
-          <img src="images/puerto-madero.jpg" alt="Puerto Madero en Buenos Aires al atardecer" class="w-full h-full object-cover" loading="lazy" onerror="this.onerror=null;this.src='images/obelisco-calle.jpg'">
+          <img src="https://www.unifuturaedu.com/images/puerto-madero.jpg" alt="Puerto Madero en Buenos Aires al atardecer" class="w-full h-full object-cover" loading="lazy" onerror="this.onerror=null;this.src='https://www.unifuturaedu.com/images/obelisco-calle.jpg'">
         </div>
         <div class="uppercase tracking-[3px] text-xs font-semibold text-[#D4A72C]">SIGUIENTE PASO</div>
         <h2 class="section-heading text-4xl lg:text-5xl tracking-[-1.6px] mt-2 leading-none mb-5">
@@ -1435,6 +1463,12 @@
     </div>
   </section>
 
+
+  <div class="md:hidden fixed bottom-0 inset-x-0 z-40 border-t border-[#0F2D52]/10 bg-white px-4 pt-3 pb-[max(0.75rem,env(safe-area-inset-bottom))] flex gap-2">
+    <a href="https://wa.me/593986622524?text=Hola%20UNIFUTURA%2C%20quiero%20orientaci%C3%B3n%20para%20estudiar%20en%20el%20exterior.%20Mi%20nombre%20es%20..." target="_blank" rel="noopener" class="flex-1 h-12 rounded-2xl border border-[#0F2D52]/20 text-[#0F2D52] text-sm font-semibold inline-flex items-center justify-center">WhatsApp</a>
+    <a href="#contacto" class="brand-cta flex-1 h-12 rounded-2xl text-sm inline-flex items-center justify-center">Solicita información</a>
+  </div>
+
   <!-- FLOATING WHATSAPP -->
   <a href="https://wa.me/593986622524?text=Hola%20UNIFUTURA%2C%20quiero%20orientaci%C3%B3n%20para%20estudiar%20en%20el%20exterior.%20Mi%20nombre%20es%20..."
      target="_blank" rel="noopener"
@@ -1452,7 +1486,7 @@
       <div class="grid md:grid-cols-12 gap-y-10 gap-x-8">
         <div class="md:col-span-5">
           <div class="flex items-center gap-x-3 mb-4">
-            <img src="logo unifutura.svg" alt="Unifutura" class="h-12 w-auto">
+            <img src="https://www.unifuturaedu.com/logo%20unifutura.svg" alt="Unifutura" class="h-12 w-auto">
             <div>
               <div class="logo-text text-white text-[21px] tracking-[-1.2px]">UNIFUTURA</div>
               <div class="text-[#D4A72C] text-[9px] tracking-[1.3px] -mt-0.5">ESTUDIA • VIAJA • TRANSFORMA</div>
